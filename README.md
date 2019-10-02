@@ -1,6 +1,8 @@
 # AD.Utils
 
-**TODO: Add description**
+This is a collection of simple functions that I kept having to re-write on a fairly regular basis.  They are published on the offchance that they are useful.
+
+Patches Welcome
 
 ## Installation
 
@@ -14,6 +16,10 @@ def deps do
   ]
 end
 ```
+
+## Function List
+
+* AD.Utils.resolve(integer) - Converts the value from userAccountControl into an array of atoms that represent the flags that have been set.
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
