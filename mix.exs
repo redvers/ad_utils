@@ -38,6 +38,7 @@ defmodule AD.Utils.MixProject do
       name: "ad_utils",
       organization: "evil.red",
       licenses: ["GPLv2"],
+      links: %{"GitHub" => "https://github.com/redvers/ad_utils"}
     }
   end
 end

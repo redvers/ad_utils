@@ -19,7 +19,12 @@ end
 
 ## Function List
 
-* AD.Utils.resolve(integer) - Converts the value from userAccountControl into an array of atoms that represent the flags that have been set.
+* AD.Utils.UserAccessControl.resolve(integer) - Converts the value from userAccountControl into an array of atoms that represent the flags that have been set.
+
+```elixir
+iex(1)> AD.Utils.UserAccessControl.resolve(514)
+[:ACCOUNTDISABLE, :NORMAL_ACCOUNT]
+```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can

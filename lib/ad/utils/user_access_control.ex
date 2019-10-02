@@ -34,7 +34,7 @@ defmodule AD.Utils.UserAccessControl do
     |> Enum.reject(&(&1 == nil))
   end
 
-  def test_value(value,  {hex, _atom}) when (value &&& hex) == 0, do: nil
-  def test_value(_value, {_hex, atom}),                           do: atom
+  defp test_value(value,  {hex, _atom}) when (value &&& hex) == 0, do: nil
+  defp test_value(_value, {_hex, atom}),                           do: atom
 
 end
